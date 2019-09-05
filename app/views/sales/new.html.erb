@@ -1,0 +1,19 @@
+<h1>Sales#new</h1>
+<p>Find me in app/views/sales/new.html.erb</p>
+
+<h2>Formulario por GET</h2>
+
+
+<%= form_with model: Sale.new, local: true do |form| %>
+<%= form.label :detail%>
+<%= form.text_area :detail%>
+<%= form.label :category%>
+<%= form.number_field :category%>
+<%= form.label :value%>
+<%= form.number_field :value%>
+<%= form.label :discount%>
+<%= form.number_field :discount%>
+<%= form.label :tax%>
+<%= form.check_box :tax%>
+<%= form.submit "Crear" %>
+<% end %>
